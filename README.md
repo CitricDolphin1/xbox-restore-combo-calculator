@@ -10,7 +10,7 @@ Python 3+ is required.
 
 Download code_gen.py and run it in Python. Type or paste your HDD Key when prompted. The program will print your reset code to the console.
 
-Go to your console's dashboard and enter Settings -> System Info. Input your button combination. A prompt will appear warning you that your data will be reset. Press "yes" to factory reset your console.
+Go to your console's dashboard and enter Settings -> System Info. Input your button combination. A prompt will appear warning you that your data will be erased. Press "yes" to factory reset your console.
 
 ## Notable button combinations
 
