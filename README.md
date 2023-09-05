@@ -9,3 +9,11 @@ This script will calculate your console-unique factory reset code given the HDD 
 Python 3+ is required.
 
 Download code_gen.py and run it in Python. Type or paste your HDD Key when prompted. The program will print your reset code to the console.
+
+## Notable button combinations
+
+If you have a modded console and have overwritten your HDD Key with one of the following, you can use the following pre-computed button combinations:
+
+**All zeroes (null key)**:YRLLY
+
+**All ones**: YRLAX
