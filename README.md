@@ -8,4 +8,4 @@ This script will calculate your console-unique factory reset code given the HDD 
 
 Python 3+ is required.
 
-Download the script and run it in Python. Type or paste your HDD Key when prompted. The program will print your reset code to the console.
+Download code_gen.py and run it in Python. Type or paste your HDD Key when prompted. The program will print your reset code to the console.
