@@ -14,6 +14,6 @@ Download code_gen.py and run it in Python. Type or paste your HDD Key when promp
 
 If you have a modded console and have overwritten your HDD Key with one of the following, you can use the following pre-computed button combinations:
 
-**All zeroes (null key)**:YRLLY
+**All zeroes (null key)**: YRLLY
 
 **All ones**: YRLAX
