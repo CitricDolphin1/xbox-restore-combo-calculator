@@ -1,0 +1,21 @@
+The algorithm that the xbox uses to determine the button combination is as follows.
+
+1. Take the SHA1 HMAC digest of the console's HDD Key, using a hardcoded 16-byte constant as the key and the HDD Key as the message. We'll call this value the HMAC Digest.
+
+2. Initialize the string "AXYUDLR" to use as a map for the key inputs
+
+3. Construct a four-button sequence by taking subsequent 16-bit unsigned shorts from the HMAC Digest, computing them mod 7 in decimal, and using that value as an index value (zero-indexed) for the recovery buttons map. For example, if the first 8 bytes of the HMAC Digest were 00 11 88 99 AA BB EE FF, then the computation would go as follows:
+
+0x0011 = 17; 17 % 7 = 3; map[3] = "U"
+
+0x8899 = 34969; 34969 % 7 = 4; map[4]="D"
+
+0x43707 = 43707; 43707 % 7 = 6; map[6]="R"
+
+0xEEFF = 61183; 61183 % 7 = 3; map[3] = "U"
+
+4. These inputs are then assmbled in reverse order: U,R,D,U
+
+5. Finally, Y is appended to the beginning of the combination: Y,U,R,D,U
+
+There are 2,401 possible unique button combinations. Assuming roughly regular distribution across the entire 24,000,000~ Xbox units sold, each button combination is shared by approximately 10,000 consoles. It is unknown whether this distribution holds true, however; for example, Microsoft may have rejected HDD Keys resulting in codes like "YYYYY" to avoid confusing consumers who might put the code in accidentally.
