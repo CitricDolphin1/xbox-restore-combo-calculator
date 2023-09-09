@@ -26,5 +26,5 @@ for index in button_indexes:
     buttons.append(recovery_key_map[index])
 
 print(f'Your button combo is: Y{buttons[0]}{buttons[1]}{buttons[2]}{buttons[3]}')
-print('To use this buttom combo, go to the System Info screen of your dashboard and input the button combo.')
+print('To use this button combo, go to the System Info screen of your dashboard and input the button combo.')
 print('Directions (U,D,L,R) should be performed on the left stick.')
