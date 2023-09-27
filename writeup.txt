@@ -10,7 +10,7 @@ The algorithm that the xbox uses to determine the button combination is as follo
 
 0x8899 = 34969; 34969 % 7 = 4; map[4]="D"
 
-0x43707 = 43707; 43707 % 7 = 6; map[6]="R"
+0xAABB = 43707; 43707 % 7 = 6; map[6]="R"
 
 0xEEFF = 61183; 61183 % 7 = 3; map[3] = "U"
 
