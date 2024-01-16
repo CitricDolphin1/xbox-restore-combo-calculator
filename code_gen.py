@@ -1,7 +1,7 @@
 import hmac
 import struct
 
-string_hdd_key = input("Input your HDD key in hexidecimal now, no spaces: ")
+string_hdd_key = input("Input your HDD key in hexadecimal now, no spaces: ")
 hdd_key = bytearray.fromhex(string_hdd_key)
 
 # hardcoded constant
